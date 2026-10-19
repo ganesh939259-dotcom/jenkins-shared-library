@@ -1,13 +1,3 @@
-@Library('my-shared-library') _
-
-pipeline {
-    agent any
-
-    stages {
-        stage('Shared Library Test') {
-            steps {
-                greet()
-            }
-        }
-    }
+def call() {
+    echo 'Hello from Jenkins Shared Library'
 }
